@@ -1,0 +1,68 @@
+h1,
+p {
+    color: black;
+}
+
+.reward,
+.dead {
+    position: absolute;
+    width: 70%;
+    top: 0.5em;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.1em 0.2em 0.1em 0.2em;
+}
+
+.dead {
+    background-color: gray;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+}
+
+.reward {
+    opacity: 0;
+    background-color: gray;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+}
+
+.card:hover .reward {
+    opacity: 1;
+}
+
+.card {
+    flex-wrap: wrap;
+}
+
+
+.card-text {
+    text-align: center;
+    justify-content: baseline;
+}
+
+
+footer {
+    background-color: #292c2f;
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+a {
+    color: gray;
+}
+
+.button {
+    background-color: gray;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+}
+
+.button:hover {
+    filter: brightness(30%);
+}
