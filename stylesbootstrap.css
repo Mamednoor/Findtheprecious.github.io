@@ -17,6 +17,7 @@ p {
 
 .reward,
 .dead {
+    
     position: absolute;
     width: 70%;
     top: 1em;

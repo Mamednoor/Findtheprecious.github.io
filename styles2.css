@@ -130,12 +130,12 @@ nav ul li a:hover {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-}
+} */
 
 .slideshow-container .active,
 .dot:hover {
     background-color: #717171;
-}*/
+}
 
 /* Fading animation */
 .slideshow-container .fade {
@@ -189,6 +189,7 @@ h1 {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 5px;
+    width: 100%;
 }
 
 #Allcards img {
@@ -197,22 +198,17 @@ h1 {
 }
 
 
-
-.reward,
-.dead {
-    position: absolute;
-    width: 70%;
-    top: 30em;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 0.1em 0.2em 0.1em 0.2em;
-}
-
 .dead {
     background-color: gray;
     text-align: center;
     color: #000;
     border-radius: 10px;
+    position: absolute;
+    width: 10%;
+    top: 30em;
+    left: 75%;
+    transform: translate(-50%);
+    padding: 0.1em 0.2em 0.1em 0.2em;
 }
 
 .reward {
@@ -221,7 +217,28 @@ h1 {
     text-align: center;
     color: #000;
     border-radius: 10px;
+    position: absolute;
+    width: 10%;
+    top: 30em;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.1em 0.2em 0.1em 0.2em;
 }
+
+.reward {
+    opacity: 0;
+    background-color: gray;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+    position: absolute;
+    width: 10%;
+    top: 30em;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.1em 0.2em 0.1em 0.2em;
+}
+
 
 .card:hover .reward {
     opacity: 1;
