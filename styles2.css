@@ -245,7 +245,7 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: left;
-    background-image:url(/assets/bg_dark.png);
+    background-image:url(./assets/bg_dark.png);
     color: white;
     padding: 20px;
     
