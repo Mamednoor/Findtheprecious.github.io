@@ -16,6 +16,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -35,17 +37,80 @@ body {
 	background-image : url(./assets/bg_dark.png); 
 }
 
-.portrait {
-	position : relative;
-	border : 5px solid black;
+
+header a {
+    
+	color : white;
 }
 
-.portrait:hover .reward {
+footer a {
+	color : white;
+}
+
+#hunted .actif {
+	text-decoration : underline;
+	color : #FE661D;
+}
+
+header .actif {
+	text-decoration : underline;
+}
+
+#carouselExampleControls .carousel-caption {
+    font-size : 3rem;
+	margin-bottom : 1rem; 
+}
+.card {
+	position : relative;
+    border : 5px solid black;
+    border-radius: 0px;
+}
+
+.card:hover .reward {
 	opacity : 0;
 }
 
+
+.name {
+	position : absolute;
+	width : inherit;
+	font-size : 4em;
+	color : white;
+    bottom : 30%;
+    left: 15%;
+}
+
+.card:hover .name {
+	font-size : 2.5em;
+	bottom: 5%;
+	left : 25%;
+}
+
+.reward {
+	position : absolute;
+	background-color : rgba(255,255,255, 0.8);
+	font-size : 2.5em;
+	top : 5%;
+	left : 2%;
+	padding : 10px;
+	border-radius : 15px; 
+}
+
+.dead {
+	position : absolute;
+	font-size : 2.5em;
+	top : 5%;
+	left : 30%; 
+}
+
+.name-dead {
+    text-decoration : line-through; 
+    left: 30%;
+}
+
 .bg-orange {
-	background-color : #FE661D;
+    background-color : #FE661D;
+    margin-left: 0px;
 }
 
 .bg-white {
@@ -75,61 +140,3 @@ body {
 	color : #DDD;
 }
 
-.name {
-	position : absolute;
-	width : inherit;
-	font-size : 4em;
-	color : white;
-	bottom : 30%;
-	left : 8%;
-}
-
-.portrait:hover .name {
-	font-size : 2.5em;
-	bottom: 5%;
-	left : 25%;
-}
-
-.reward {
-	position : absolute;
-	background-color : rgba(255,255,255, 0.8);
-	font-size : 2.5em;
-	top : 5%;
-	left : 2%;
-	padding : 10px;
-	border-radius : 15px; 
-}
-
-.dead {
-	position : absolute;
-	font-size : 2.5em;
-	top : 5%;
-	left : 30%; 
-}
-
-.name-dead {
-	text-decoration : line-through; 
-}
-
-header a {
-    
-	color : white;
-}
-
-footer a {
-	color : white;
-}
-
-#hunted .actif {
-	text-decoration : underline;
-	color : #FE661D;
-}
-
-header .actif {
-	text-decoration : underline;
-}
-
-#carouselExampleControls .carousel-caption {
-    font-size : 3rem;
-	margin-bottom : 1rem; 
-}
