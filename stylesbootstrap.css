@@ -140,9 +140,9 @@ header .actif {
 	color : #DDD;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
 
-#MyBad {
+.MyBad {
 	display: none;
 }
 }
