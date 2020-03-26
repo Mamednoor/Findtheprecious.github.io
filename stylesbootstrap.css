@@ -1,12 +1,15 @@
-.navbar{
-    background-color: orange;
+@font-face {
+	font-family : "partybusiness";
+	src : url('./assets/fonts/partybusiness.ttf');
 }
 
-h1,
-p {
-    color: black;
+@font-face {
+	font-family : "aniron"; 
+	src : url('./assets/fonts/anicb___.ttf');
+
 }
 
+<<<<<<< HEAD
 .name{
     color: white;
     position: absolute;
@@ -25,37 +28,103 @@ p {
     left: 50%;
     transform: translate(-50%);
     padding: 0.1em 0.2em 0.1em 0.2em;
+=======
+@font-face {
+	font-family : "tengwar";
+	src : url('./assets/fonts/tngan.ttf');
 }
 
-.dead {
-    background-color: gray;
-    text-align: center;
-    color: #000;
-    border-radius: 10px;
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+>>>>>>> dev
 }
 
-.reward {
-    opacity: 0;
-    background-color: gray;
-    text-align: center;
-    color: #000;
-    border-radius: 10px;
+body {
+    font-family : "partybusiness"; 
+}
+
+.font-title {
+    font-family : "aniron";
+    
+}
+
+.font-deco {
+	font-family : "tengwar"; 
+}
+
+.bg-noir {
+	background-image : url(./assets/bg_dark.png); 
+}
+
+
+header a {
+    
+	color : white;
+}
+
+footer a {
+	color : white;
+}
+
+#hunted .actif {
+	text-decoration : underline;
+	color : #FE661D;
+}
+
+header .actif {
+	text-decoration : underline;
+}
+
+#carouselExampleControls .carousel-caption {
+    font-size : 3rem;
+	margin-bottom : 1rem; 
+}
+.card {
+	position : relative;
+    border : 5px solid black;
+    border-radius: 0px;
 }
 
 .card:hover .reward {
-    opacity: 1;
-}
-
-.card {
-    flex-wrap: wrap;
+	opacity : 0;
 }
 
 
-.card-text {
-    text-align: center;
-    justify-content: baseline;
+.name {
+	position : absolute;
+	width : inherit;
+	font-size : 4em;
+	color : white;
+    bottom : 30%;
+    left: 15%;
 }
 
+.card:hover .name {
+	font-size : 2.5em;
+	bottom: 5%;
+	left : 25%;
+}
+
+.reward {
+	position : absolute;
+	background-color : rgba(255,255,255, 0.8);
+	font-size : 2.5em;
+	top : 5%;
+	left : 2%;
+	padding : 10px;
+	border-radius : 15px; 
+}
+
+.dead {
+	position : absolute;
+	font-size : 2.5em;
+	top : 5%;
+	left : 30%; 
+}
+
+<<<<<<< HEAD
 .card-body {
    background-color: black;
    
@@ -63,28 +132,42 @@ p {
 
 .card-text {
     color: gray;
+=======
+.name-dead {
+    text-decoration : line-through; 
+    left: 30%;
+>>>>>>> dev
 }
 
-footer {
-    background-color: #292c2f;
+.bg-orange {
+    background-color : #FE661D;
+    margin-left: 0px;
 }
 
-footer ul {
-    list-style: none;
-
+.bg-white {
+	background-color : white;
 }
 
-a {
-    color: gray;
+.bg-gris {
+	background-color : #DDD; 
 }
 
-.button {
-    background-color: gray;
-    text-align: center;
-    color: #000;
-    border-radius: 10px;
+
+.text-orange {
+	color : #FE661D;
 }
 
-.button:hover {
-    filter: brightness(30%);
+.text-white {
+	color : white;
 }
+
+.text-noir {
+	color : black;
+}
+
+.text-gris {
+    font-weight: bold;
+    font-size: 30px;
+	color : #DDD;
+}
+
