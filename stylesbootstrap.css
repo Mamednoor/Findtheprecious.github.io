@@ -8,6 +8,7 @@ p {
 }
 
 .name{
+    color: white;
     position: absolute;
     top: 5em;
     left: 35%;
@@ -17,7 +18,7 @@ p {
 
 .reward,
 .dead {
-    
+
     position: absolute;
     width: 70%;
     top: 1em;
@@ -55,6 +56,14 @@ p {
     justify-content: baseline;
 }
 
+.card-body {
+   background-color: black;
+   
+}
+
+.card-text {
+    color: gray;
+}
 
 footer {
     background-color: #292c2f;
