@@ -1,295 +1,135 @@
-* {
+@font-face {
+	font-family : "partybusiness";
+	src : url('./assets/fonts/partybusiness.ttf');
+}
+
+@font-face {
+	font-family : "aniron"; 
+	src : url('./assets/fonts/anicb___.ttf');
+
+}
+
+@font-face {
+	font-family : "tengwar";
+	src : url('./assets/fonts/tngan.ttf');
+}
+
+*{
     box-sizing: border-box;
 }
 
-
-header {
-    margin: 0px;
-    padding: 0px;
+body {
+    font-family : "partybusiness"; 
 }
 
-section {
-    margin: 0px;
-    padding: 0px;
-}
-
-nav {
-    display: flex;
-    background-color: rgb(255, 115, 0);
-    margin: 0px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding-left: 0px;
-    margin-bottom: 0px;
-}
-
-nav ul li {
-    align-items: baseline;
-    margin-left: 10px;
-
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-nav ul li a:hover {
-    text-decoration: none;
-    padding: 7px 2px 7px 2px;
-    margin: 2px 2px 2px 2px;
-    color: orangered;
-
-}
-
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*##################################################CAROUSEL#######################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
+.font-title {
+    font-family : "aniron";
     
 }
 
-
-/* Hide the images by default */
-.slideshow-container .mySlides {
-    display: none;
-    
+.font-deco {
+	font-family : "tengwar"; 
 }
 
-.slideshow-container img {
-    margin: 0px;
+.bg-noir {
+	background-image : url(./assets/bg_dark.png); 
 }
 
-/* Next & previous buttons */
-.slideshow-container .prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
+.portrait {
+	position : relative;
+	border : 5px solid black;
+}
+
+.portrait:hover .reward {
+	opacity : 0;
+}
+
+.bg-orange {
+	background-color : #FE661D;
+}
+
+.bg-white {
+	background-color : white;
+}
+
+.bg-gris {
+	background-color : #DDD; 
+}
+
+
+.text-orange {
+	color : #FE661D;
+}
+
+.text-white {
+	color : white;
+}
+
+.text-noir {
+	color : black;
+}
+
+.text-gris {
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    font-size: 30px;
+	color : #DDD;
 }
 
-/* Position the "next button" to the right */
-.slideshow-container .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.name {
+	position : absolute;
+	width : inherit;
+	font-size : 4em;
+	color : white;
+	bottom : 30%;
+	left : 8%;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.slideshow-container .prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.slideshow-container .text {
-    color: #f2f2f2;
-    font-size: 25px;
-    padding: 50px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc)
-.slideshow-container .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators
-.slideshow-container .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.slideshow-container .active,
-.dot:hover {
-    background-color: #717171;
-}*/
-
-/* Fading animation */
-.slideshow-container .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    margin: 0px;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*##################################################CAROUSEL#######################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-/*#################################################################################################################*/
-
-
-h1 {
-    text-align: center;
-    position: relative;
-    margin: 0px;
-    margin-bottom: 20px;
-}
-
-#Allcards {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-
-#Allcards img {
-    display: flex;
-    margin: 0px 0px 10px 0px;
-}
-
-
-
-.reward,
-.dead {
-    position: absolute;
-    width: 70%;
-    top: 30em;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 0.1em 0.2em 0.1em 0.2em;
-}
-
-.dead {
-    background-color: gray;
-    text-align: center;
-    color: #000;
-    border-radius: 10px;
+.portrait:hover .name {
+	font-size : 2.5em;
+	bottom: 5%;
+	left : 25%;
 }
 
 .reward {
-    opacity: 0;
-    background-color: gray;
-    text-align: center;
-    color: #000;
-    border-radius: 10px;
+	position : absolute;
+	background-color : rgba(255,255,255, 0.8);
+	font-size : 2.5em;
+	top : 5%;
+	left : 2%;
+	padding : 10px;
+	border-radius : 15px; 
 }
 
-.card:hover .reward {
-    opacity: 1;
+.dead {
+	position : absolute;
+	font-size : 2.5em;
+	top : 5%;
+	left : 30%; 
 }
 
-.card {
-    flex-wrap: wrap;
-    display: flex;
-    border: 5px solid black;
-    margin-left: 25px;
+.name-dead {
+	text-decoration : line-through; 
 }
 
-
-.card-text {
-    text-align: center;
-    justify-content: baseline;
-}
-
-
-#contactpanel {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    background-image:url(/FromScratch/assets/bg_dark.png);
-    color: white;
-    padding: 20px;
+header a {
     
+	color : white;
 }
 
-#Contactus{
-    margin: 0px;
+footer a {
+	color : white;
 }
 
-form {
-    width: 300px
-
+#hunted .actif {
+	text-decoration : underline;
+	color : #FE661D;
 }
 
-input, select, textarea {
-    align-items: baseline;
-    width: 100%;
-    border-radius: 3px;
-    margin-bottom: 10px;
+header .actif {
+	text-decoration : underline;
 }
 
-
-.asideform {
-    margin-left: 25px;
-}
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(255, 115, 0);
-    margin-left: 0px;
-}
-
-.footer ul li {
-    list-style: none;
-}
-
-.footer ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer ul li a:hover {
-    color: orangered;
-    text-decoration: none;
+#carouselExampleControls .carousel-caption {
+    font-size : 3rem;
+	margin-bottom : 1rem; 
 }
