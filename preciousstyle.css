@@ -15,17 +15,19 @@
 }
 
 *{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+	box-sizing: border-box;
 }
 
 body {
     font-family : "partybusiness"; 
+
 }
 
+
+
 .font-title {
-    font-family : "aniron";
+	font-family : "aniron";
+	width: 100%;
     
 }
 
@@ -37,6 +39,14 @@ body {
 	background-image : url(./assets/bg_dark.png); 
 }
 
+.navbar-toggler-icon{
+	padding-right: 90px;
+
+}
+
+#main{
+	padding: 0px;
+}
 
 header a {
     
@@ -47,10 +57,14 @@ footer a {
 	color : white;
 }
 
-#hunted .actif {
-	text-decoration : underline;
-	color : #FE661D;
+.d-block{
+	padding: 0 auto;
 }
+
+h3{
+	text-align: center;
+}
+
 
 header .actif {
 	text-decoration : underline;
@@ -59,6 +73,7 @@ header .actif {
 #carouselExampleControls .carousel-caption {
     font-size : 3rem;
 	margin-bottom : 1rem; 
+	width: 100%;
 }
 .card {
 	position : relative;
@@ -67,9 +82,8 @@ header .actif {
 }
 
 .card:hover .reward {
-	opacity : 0;
+	opacity : 1;
 }
-
 
 .name {
 	position : absolute;
@@ -94,6 +108,7 @@ header .actif {
 	left : 2%;
 	padding : 10px;
 	border-radius : 15px; 
+	opacity: 0;
 }
 
 .dead {
@@ -140,3 +155,13 @@ header .actif {
 	color : #DDD;
 }
 
+footer {
+    width: 100vw;
+}
+
+@media screen and (max-width:600px) {
+
+.MyBad {
+	display: none;
+}
+}
